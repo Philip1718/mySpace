@@ -1,0 +1,124 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #051920;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.theSpace {
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Allow this section to expand */
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row; /* Position text on the left and image on the right */
+}
+
+.theSpace p {
+    flex: 1; /* Allow text to use available space */
+    margin-right: 20px; /* Add space between text and image */
+}
+
+.theSpace img {
+    width: 300px; /* Make the image larger */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+}
+
+.criteria {
+    margin-top: 40px; /* Add space above the new section */
+    text-align: center;
+}
+
+.criteria h2{
+    font-size:24px;
+    margin-bottom:20px;
+    color:white;
+
+}
+
+.criteria ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto; /* Center-align the list */
+    max-width: 800px; /* Optional: limit the width of the list */
+}
+
+.criteria ul li {
+    background-color: #1e2a38; /* Darker background for each item */
+    border: 1px solid #2a3a5a; /* Border around each item */
+    border-radius: 8px; /* Rounded corners for each item */
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Lighter text color for better readability */
+    text-align: left; /* Align text inside list items to the left */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer .copyright {
+    margin: 0;
+}
+
+footer .contact { /* Changed to match class in HTML */
+    margin: 0;
+}
+
+footer .contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}
